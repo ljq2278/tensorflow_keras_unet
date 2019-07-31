@@ -2,8 +2,8 @@ import tensorflow as tf
 from tensorflow import keras
 
 base_model = keras.applications.VGG16(input_shape=(256,256,3), include_top=False)
-
 x = base_model.get_layer("block5_conv3").output
+
 # inputs = keras.Input(shape=(32,))  # Returns a placeholder tensor
 #
 # # A layer instance is callable on a tensor, and returns a tensor.
